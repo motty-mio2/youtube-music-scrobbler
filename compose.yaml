@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    container_name: app
+    # command: ["sleep", "100000"]
+    env_file:
+      - ./.env
