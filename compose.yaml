@@ -3,5 +3,10 @@ services:
     build: .
     container_name: app
     # command: ["sleep", "100000"]
+    volumes:
+      - type: bind
+        source: "./browser.json"
+        target: "/app/browser.json"
     env_file:
       - ./.env
+
