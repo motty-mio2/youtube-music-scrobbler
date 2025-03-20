@@ -2,7 +2,6 @@ services:
   app:
     build: .
     container_name: app
-    # command: ["sleep", "100000"]
     volumes:
       - type: bind
         source: "./browser.json"
